@@ -16,9 +16,9 @@ function clearContent() {
 
 
 function setNav() {
-  const homeBtn = document.querySelector("#homeBtn");
-  const menuBtn = document.querySelector("#menuBtn");
-  const contactBtn = document.querySelector("#contactBtn");
+  const homeBtn = document.querySelector("#home");
+  const menuBtn = document.querySelector("#menu");
+  const contactBtn = document.querySelector("#contact");
 
   homeBtn.addEventListener("click", clearContent, loadHomePage);
   menuBtn.addEventListener("click", clearContent, loadMenu);
