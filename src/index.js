@@ -1,4 +1,6 @@
 import "./style.css";
+import images from "./images/image.png";
+
 
 import { loadHomePage } from "./home.js";
 import { loadMenu } from "./menu";
@@ -15,15 +17,27 @@ function clearContent() {
 }
 
 
-function setNav() {
-  const homeBtn = document.querySelector("#home");
-  const menuBtn = document.querySelector("#menu");
-  const contactBtn = document.querySelector("#contact");
+ export function setNav() {
+  const homeBtn = document.querySelector("#home"); 
+  const menuBtn = document.querySelector("#menu"); 
+  const contactBtn = document.querySelector("#contact"); 
 
-  homeBtn.addEventListener("click", clearContent, loadHomePage);
-  menuBtn.addEventListener("click", clearContent, loadMenu);
-  contactBtn.addEventListener("click", clearContent, loadContact);
+  homeBtn.addEventListener("click", () => {
+    clearContent();
+    loadHomePage();
+  });
+
+  menuBtn.addEventListener("click", () => {
+    clearContent();
+    loadMenu();
+  });
+
+  contactBtn.addEventListener("click", () => {
+    clearContent();
+    loadContact();
+  });
 }
+
 
 loadHomePage();
 setNav()

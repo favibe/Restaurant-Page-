@@ -1,3 +1,5 @@
+import pizzaImg from "./images/image.png"; 
+
 const menu = [];
 
 class Menu {
@@ -10,9 +12,9 @@ class Menu {
 };
 
 menu.push (
-    new Menu("Margherita Pizza", "Classic pizza with tomato, mozzarella, and basil.", "$12", "images/image.png"),
-    new Menu("Pasta Carbonara", "Creamy pasta with pancetta and parmesan cheese.", "$14", "images/image.png"),
-    new Menu("Tiramisu", "Italian coffee-flavored dessert with mascarpone.", "$8", "images/image.png"),
+    new Menu("Margherita Pizza", "Classic pizza with tomato, mozzarella, and basil.", "$12", pizzaImg),
+    new Menu("Pasta Carbonara", "Creamy pasta with pancetta and parmesan cheese.", "$14", pizzaImg),
+    new Menu("Tiramisu", "Italian coffee-flavored dessert with mascarpone.", "$8", pizzaImg),
 );
 
 //function to loadmenu
