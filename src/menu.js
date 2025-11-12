@@ -16,7 +16,7 @@ menu.push (
 );
 
 //function to loadmenu
-function loadMenu() {
+ export function loadMenu() {
     const content = document.querySelector("#content");
     content.innerHTML = "";
 

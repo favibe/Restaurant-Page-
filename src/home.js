@@ -5,8 +5,8 @@
    const heading = document.createElement("h1")
    const para = document.createElement("p");
 
-   headline.textContent = "Welcome to Elle's Kitchen!";
-   description.textContent = "The best meals, freshly cooked with love 💖";
+   heading.textContent = "Welcome to Elle's Kitchen!";
+   para.textContent = "The best meals, freshly cooked with love 💖";
 
    homeDiv.appendChild(heading);
    homeDiv.appendChild(para);
