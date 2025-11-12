@@ -1,5 +1,5 @@
  export function loadHomePage() {
-    const content = document.querySelector(".content");
+    const content = document.querySelector("#content");
 
    const homeDiv = document.createElement("div");
    const heading = document.createElement("h1")
